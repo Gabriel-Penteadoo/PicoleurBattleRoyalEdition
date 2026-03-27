@@ -23,9 +23,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.supdevinci.picoleurbattleroyaledition.ui.theme.CrimsonRed
+import com.supdevinci.picoleurbattleroyaledition.ui.theme.Navy900
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.ImageLoader
@@ -68,7 +69,7 @@ fun SplashScreen(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF1A1A2E))
+            .background(Navy900)
             .padding(horizontal = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -89,8 +90,8 @@ fun SplashScreen(navController: NavHostController) {
                 .fillMaxWidth(0.7f)
                 .height(8.dp)
                 .clip(RoundedCornerShape(4.dp)),
-            color = Color(0xFFBB86FC),
-            trackColor = Color.LightGray
+            color = CrimsonRed,
+            trackColor = Navy900.copy(alpha = 0.4f)
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -98,7 +99,7 @@ fun SplashScreen(navController: NavHostController) {
         Text(
             text = "Chargement : ${(progress.value * 100).toInt()}%",
             style = MaterialTheme.typography.bodyMedium,
-            color = Color.Gray
+            color = MaterialTheme.colorScheme.onSurfaceVariant
         )
 
         Spacer(modifier = Modifier.weight(1f))
