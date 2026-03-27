@@ -27,7 +27,9 @@
       "Bash(sed -i 's|com\\\\.supdevinci\\\\.picoleurbattleroyaledition\\\\.data\\\\.db\\\\.entity\\\\.|com.supdevinci.picoleurbattleroyaledition.data.db.|g' /home/modded/AndroidStudioProjects/PicoleurBattleRoyalEditionV2/app/src/main/java/com/supdevinci/picoleurbattleroyaledition/ui/screens/ProfileScreen.kt)",
       "Bash(__NEW_LINE_7a38da9142fb5c5f__ sed:*)",
       "Bash(__NEW_LINE_7a38da9142fb5c5f__ echo:*)",
-      "Bash(find /home/modded/AndroidStudioProjects/PicoleurBattleRoyalEdition/app/src/main/java -type f -name *.kt)"
+      "Bash(find /home/modded/AndroidStudioProjects/PicoleurBattleRoyalEdition/app/src/main/java -type f -name *.kt)",
+      "Bash(gh repo:*)",
+      "Bash(find /home/modded/AndroidStudioProjects/PicoleurBattleRoyalEdition/app/src/main -name *Splash* -o -name *splash*)"
     ]
   }
 }

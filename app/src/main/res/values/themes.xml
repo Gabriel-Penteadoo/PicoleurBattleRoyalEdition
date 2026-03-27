@@ -2,4 +2,10 @@
 <resources>
 
     <style name="Theme.PicoleurBattleRoyalEdition" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.PicoleurBattleRoyalEdition.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_app</item>
+        <item name="postSplashScreenTheme">@style/Theme.PicoleurBattleRoyalEdition</item>
+    </style>
 </resources>
